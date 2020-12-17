@@ -1,0 +1,7 @@
+
+<h1 style="color:pink;" > Catálogo de Joyas </h1>
+<hr>
+
+<div class="card-columns">
+    <app-card *ngFor="let joya of joyas; index as i;" [joya]="joya" [index]="i" ></app-card>
+</div>

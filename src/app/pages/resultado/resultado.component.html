@@ -1,0 +1,15 @@
+<h2  style="color:pink;"> Resultado de la búsqueda </h2>
+<hr>
+
+<div  *ngIf="joyas!.length>0;then bloqueThen else bloqueElse" >
+</div>
+<ng-template #bloqueThen>
+    <div class="card-columns">
+        <app-card *ngFor="let joya of joyas; index as i" [joya]="joya" [index]="joya.id!" ></app-card>
+    </div>
+</ng-template>
+<ng-template #bloqueElse>
+    <div>
+        <h6> No se encontraro resultados. </h6>
+    </div>
+</ng-template>

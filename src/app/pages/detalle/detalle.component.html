@@ -1,0 +1,26 @@
+<h1> {{ joya.nombre | uppercase }}  </h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="joya.img" alt="imagen" style="float:left;" width="330" height="290" >
+    </div>
+    <div class="col-md-8">
+        <p>
+            {{joya.descripcion}}
+        </p>
+        <p>
+            Material: {{joya.materiales}}
+        </p>
+        <p>
+            Tamaño: {{joya.tamanio}}
+        </p>
+        <p>
+            Precio: S/ {{joya.precio}}
+        </p>
+        <p>
+            Nombre: {{joya.nombre}}
+        </p>
+        <p> <button class="btn btn-outline-info" [routerLink]= "['/galeria']" > Volver  </button> </p>
+    </div>
+</div>
